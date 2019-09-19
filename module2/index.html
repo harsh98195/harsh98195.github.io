@@ -1,31 +1,60 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>MENU</title>
-        <link type="text/css" href="css/index.css" rel="stylesheet">
-    </head>
-    <body>
-        <h1>OUR MENU</h1>
-        <div id="main">
-            <p>Chicken</p>
-            <div id="chicken">
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit amet consequatur, asperiores placeat quo, veritatis esse expedita iusto quisquam voluptatibus sed culpa minus mollitia? Corporis suscipit quibusdam nisi error alias.</p>
-            </div>
+<head>
+<meta charset="utf-8">
+<title>The Box Model</title>
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color:white;
+}
+#box {
+  background-color:pink;
+  padding: 10px;
+  border: 5px solid black;
+  width: 300px;
+  height: 200px;
+  margin-top: 50px;
+  overflow: hidden;
+  font-weight: bold;
+  float: left;
+  position: relative;
+  padding: 20px;
+}
+#content {
+  background-color: gray /* green */
+  text-emphasis:none;
+}
+h1 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<h1>OUR MENU</h1>
+
+<div id="box">
+    <p>CHICKEN</p>
+  <div id="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit error quis ab perspiciatis eos inventore recusandae iste itaque numquam facilis, tenetur. Doloribus officiis quae facilis, nisi, ex similique. Animi, perferendis. 
+  </div>
+  
+</div>
+<div id="box" style="position: relative">
+        <p>CHICKEN</p>
+      <div id="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit error quis ab perspiciatis eos inventore recusandae iste itaque numquam facilis, tenetur. Doloribus officiis quae facilis, nisi, ex similique. Animi, perferendis. 
+      </div>
+    </div>
+    <div id="box">
+            <p>CHICKEN</p>
+          <div id="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit error quis ab perspiciatis eos inventore recusandae iste itaque numquam facilis, tenetur. Doloribus officiis quae facilis, nisi, ex similique. Animi, perferendis. 
+          </div>
         </div>
-        <div id="main">
-            <p>Beef</p>
-            <div id="beef">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, suscipit? Ipsum harum ad officia et ipsa deleniti vitae dolore neque, ut, placeat eius itaque, architecto accusamus debitis fugiat reiciendis? Quas.
-                </p>
-            </div>
-        </div>
-        <div id="main">
-            <p>Sushi</p>
-        <div id="sushi">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At fuga earum molestias placeat aliquam repellendus error possimus in recusandae sequi. Corrupti rem aperiam laboriosam deserunt quasi maxime dolorum, distinctio esse consequuntur sequi fugit culpa expedita odio officia saepe, optio modi necessitatibus molestiae beatae voluptatum nulla quo. Modi quasi quidem cum!</p>
-        </div>
-        </div>
-    </body>
+
+</body>
 </html>
